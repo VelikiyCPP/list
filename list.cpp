@@ -443,7 +443,7 @@ public:
         if (size_ > 1) {
             for (auto it = begin(), next_it = std::next(it); next_it != end();) {
                 if (*it == *next_it) {
-                    next_it(erase(next_it));
+                    next_it = erase(next_it);
                     continue;
                 }
 
