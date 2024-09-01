@@ -9,10 +9,6 @@
 #include <thread>
 #include <type_traits>
 
-template <typename T>
-using is_random_access_iterator = std::is_base_of<std::random_access_iterator_tag,
-    typename std::iterator_traits<T>::iterator_category>;
-
 template< class T>
 class List {
     using value_type = T;
